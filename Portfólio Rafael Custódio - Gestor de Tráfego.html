@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio: Rafael Custódio - Gestor de Tráfego e Performance Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Chosen vibrant palette: Energetic & Playful (adapted for dark background) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #073B4C; /* Darker background */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            /* Removed fixed height here, will use Tailwind classes on the div */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #118AB2, #06D6A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #06D6A0;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-black mb-2 text-white">Rafael Custódio</h1>
+            <p class="text-xl md:text-2xl font-bold text-[#118AB2]">Gestor de Tráfego & Performance Digital</p>
+            <p class="max-w-3xl mx-auto mt-4 text-gray-300">Transformando cliques em clientes e investimentos em resultados concretos. Descubra como a gestão de tráfego pode impulsionar o seu negócio.</p>
+        </header>
+
+        <main class="space-y-12 md:space-y-20">
+
+            <section id="necessity" class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Por que seu negócio precisa de um Gestor de Tráfego?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                        <div class="text-5xl font-black text-[#FF6B6B] mb-4">90%</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Visibilidade Perdida</h3>
+                        <p class="text-gray-600">Dos consumidores usam a internet para encontrar negócios locais. Sem uma estratégia de tráfego, você está invisível para a maioria deles.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                        <div class="text-5xl font-black text-[#FFD166] mb-4">50%</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Investimento Ineficaz</h3>
+                        <p class="text-gray-600">Do orçamento de marketing pode ser desperdiçado sem a segmentação e otimização corretas que um gestor profissional oferece.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                        <div class="text-5xl font-black text-[#06D6A0] mb-4">3X</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Potencial de Crescimento</h3>
+                        <p class="text-gray-600">Empresas que investem em tráfego pago crescem mais rápido, alcançando novos mercados e gerando vendas de forma previsível.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="process">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-white">Meu Processo: Uma Jornada Transparente Rumo ao Resultado</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative">
+                        <div class="hidden md:block absolute left-1/2 w-1 bg-[#118AB2] h-full -translate-x-1/2"></div>
+                        <div class="space-y-12 md:space-y-0">
+                            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                <div class="text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                                    <div class="bg-[#118AB2] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto md:mr-0 md:ml-auto">1</div>
+                                </div>
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Imersão e Diagnóstico</h3>
+                                    <p class="text-gray-600">Entendo a fundo seu negócio, seus objetivos e seu público para traçar o mapa do sucesso.</p>
+                                </div>
+                            </div>
+                            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                <div class="bg-white p-6 rounded-lg shadow-lg md:order-2">
+                                    <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Planejamento Estratégico</h3>
+                                    <p class="text-gray-600">Defino as melhores plataformas, orçamentos e metas para maximizar seu investimento.</p>
+                                </div>
+                                <div class="text-center md:text-left md:pl-8 mb-4 md:mb-0 md:order-1">
+                                    <div class="bg-[#06D6A0] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto md:ml-0 md:mr-auto">2</div>
+                                </div>
+                            </div>
+                            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                <div class="text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                                    <div class="bg-[#FFD166] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto md:mr-0 md:ml-auto">3</div>
+                                </div>
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Lançamento e Execução</h3>
+                                    <p class="text-gray-600">Configuro e lanço as campanhas com as melhores práticas, garantindo uma performance inicial sólida.</p>
+                                </div>
+                            </div>
+                             <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                <div class="bg-white p-6 rounded-lg shadow-lg md:order-2">
+                                    <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Otimização Contínua</h3>
+                                    <p class="text-gray-600">Monitoro diariamente, analiso dados e faço ajustes para melhorar os resultados e reduzir custos.</p>
+                                </div>
+                                <div class="text-center md:text-left md:pl-8 mb-4 md:mb-0 md:order-1">
+                                    <div class="bg-[#FF6B6B] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto md:ml-0 md:mr-auto">4</div>
+                                </div>
+                            </div>
+                            <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                                <div class="text-center md:text-right md:pr-8 mb-4 md:mb-0">
+                                    <div class="bg-[#073B4C] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto md:mr-0 md:ml-auto">5</div>
+                                </div>
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-bold mb-2 text-[#073B4C]">Relatórios e Análise de ROI</h3>
+                                    <p class="text-gray-600">Apresento relatórios claros que mostram o retorno sobre cada real investido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expertise">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-white">Minhas Ferramentas: Foco em Plataformas de Resultado</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-[#073B4C]">Google Ads</h3>
+                        <p class="text-center text-gray-600 mb-6">Capturo clientes no momento exato em que eles procuram por seus produtos ou serviços.</p>
+                        <div class="chart-container h-80 sm:h-96 md:h-[400px]">
+                            <canvas id="googleAdsChart"></canvas>
+                        </div>
+                        <p class="text-center text-gray-500 mt-4 text-sm">Foco estratégico em campanhas de Pesquisa, Display e YouTube para máxima cobertura.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-[#073B4C]">Meta Ads</h3>
+                        <p class="text-center text-gray-600 mb-6">Alcanço seu público ideal no Instagram e Facebook, criando desejo e gerando conversões.</p>
+                        <div class="chart-container h-80 sm:h-96 md:h-[400px]">
+                            <canvas id="metaAdsChart"></canvas>
+                        </div>
+                        <p class="text-center text-gray-500 mt-4 text-sm">Especialização em segmentação avançada para leads, vendas e visitas à loja física.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="results">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-white">O Objetivo Final: Retorno Sobre o Investimento (ROI)</h2>
+                 <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mb-6">Meu compromisso é transformar seu investimento em faturamento. Abaixo, um exemplo do potencial de crescimento em um projeto de 6 meses.</p>
+                    <div class="chart-container h-80 sm:h-96 md:h-[400px]">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                 </div>
+            </section>
+
+            <footer id="contact" class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <h2 class="text-3xl font-bold mb-4 text-[#073B4C]">Vamos Conversar?</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-6">Se você busca um parceiro dedicado a impulsionar a visibilidade e as vendas do seu negócio através do tráfego pago, estou à disposição.</p>
+                <div class="bg-[#073B4C] text-white p-6 rounded-lg inline-block">
+                    <p class="font-bold text-xl">Rafael Custódio</p>
+                    <p>Gestor de Tráfego e Performance Digital</p>
+                    <a href="https://wa.me/5575983144766?text=Olá%20Rafael,%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços%20de%20Gestão%20de%20Tráfego." target="_blank" class="mt-4 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#1DA851] transition-colors flex items-center justify-center mx-auto shadow-md">
+                        <span class="text-2xl mr-2">&#x1F4DE;</span> Chamar no WhatsApp
+                    </a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function wrapText(label) {
+                const maxLength = 16;
+                if (label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            }
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                }
+                return label;
+            };
+            
+            const palette = {
+                red: '#FF6B6B',
+                yellow: '#FFD166',
+                green: '#06D6A0',
+                blue: '#118AB2',
+                darkBlue: '#073B4C'
+            };
+
+            try {
+                const googleAdsCtx = document.getElementById('googleAdsChart').getContext('2d');
+                new Chart(googleAdsCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Pesquisa (Leads)', 'Display (Marca)', 'YouTube (Engajamento)'],
+                        datasets: [{
+                            label: 'Foco Google Ads',
+                            data: [50, 25, 25],
+                            backgroundColor: [palette.blue, palette.green, palette.red],
+                            borderColor: '#ffffff',
+                            borderWidth: 4,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Erro ao inicializar Google Ads Chart:", error);
+            }
+
+            try {
+                const metaAdsCtx = document.getElementById('metaAdsChart').getContext('2d');
+                new Chart(metaAdsCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Conversão (Vendas)', 'Leads (Contato)', 'Alcance (Local)'],
+                        datasets: [{
+                            label: 'Foco Meta Ads',
+                            data: [45, 35, 20],
+                            backgroundColor: [palette.green, palette.yellow, palette.blue],
+                            borderColor: '#ffffff',
+                            borderWidth: 4,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Erro ao inicializar Meta Ads Chart:", error);
+            }
+            
+            try {
+                const roiCtx = document.getElementById('roiChart').getContext('2d');
+                new Chart(roiCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Mês 1', 'Mês 2', 'Mês 3', 'Mês 4', 'Mês 5', 'Mês 6'],
+                        datasets: [{
+                            label: 'Investimento (R$)',
+                            data: [1000, 1200, 1200, 1500, 1500, 1800],
+                            backgroundColor: palette.yellow,
+                            borderColor: palette.yellow,
+                            borderWidth: 1
+                        }, {
+                            label: 'Faturamento Gerado (R$)',
+                            data: [1500, 2500, 3800, 5500, 7200, 9500],
+                            backgroundColor: palette.green,
+                            borderColor: palette.green,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: function(value) {
+                                        return 'R$ ' + value / 1000 + 'k';
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Erro ao inicializar ROI Chart:", error);
+            }
+        });
+    </script>
+</body>
+</html>
